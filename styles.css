@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--text-color);
   background-color: var(--background-color);
   max-width: 1400px;
@@ -89,7 +89,7 @@ nav .right a span {
   border-radius: 5px;
   margin-right: 10px;
   margin-bottom: 10px;
-  transition: .1s;
+  transition: 0.1s;
 }
 
 .hero-section .text .links a:hover {
@@ -153,9 +153,64 @@ nav .right a span {
 .skills-section .cells .cell span {
   font-size: 18px;
 }
+/* SECTION 3: Projects */
+
+.projects-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.projects-section h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.projects-section .group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.projects-section .group .project {
+  flex: 1;
+  min-width: 300px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 2px solid var(--link-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects-section .group .project img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.projects-section .group .project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.projects-section .group .project p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.projects-section .group .project a {
+  font-size: 16px;
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.projects-section .group .project a:hover {
+  text-decoration: underline;
+}
 
 /* SECTION 3: Testimony */
-.testimony-section {
+/* .testimony-section {
   padding: 0 50px;
   margin-bottom: 100px;
 }
@@ -194,7 +249,7 @@ nav .right a span {
 
 .testimony-section .group .text {
   flex: 8;
-}
+} */
 
 /* SECTION 4: Contact */
 .contact-section {
@@ -224,7 +279,7 @@ nav .right a span {
 
 .contact-section .group form input,
 .contact-section .group form textarea {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   border: 2px solid var(--link-color);
   background-color: transparent;
   padding: 10px;
@@ -235,19 +290,23 @@ nav .right a span {
 
 .contact-section .group form button {
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #fff;
   background-color: var(--link-color);
   border: none;
   height: 50px;
   cursor: pointer;
-  transition: .1s;
+  transition: 0.1s;
 }
 
 .contact-section .group form button:hover {
-  filter: brightness(.9);
+  filter: brightness(0.9);
 }
 
+.footer-section .footer-content p {
+  text-align: center;
+  margin-bottom: 13px;
+}
 @media (max-width: 850px) {
   /* SECTION 1: Hero */
   .hero-section .text h2 {
